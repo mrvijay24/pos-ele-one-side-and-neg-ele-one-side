@@ -1,0 +1,14 @@
+#program to print the negative numbers one side and the positive numbers oneside
+n=int(input("enter the number of elements in the list"))
+
+x=list(map(int,input().split()))
+ng=[]
+ps=[]
+for i in range(0,n):
+    if x[i]<0:
+        ng.append(x[i])
+    else:
+        ps.append(x[i])
+ng.extend(ps)
+print(ng)
+        
